@@ -31,7 +31,33 @@ $.ajax(settings).done(function (response) {
     
     
 });
-})
+});
+
+$("#random").on("click", function(event){
+    event.preventDefault();
+    
+        var settings = {
+            "async": true,
+        "crossDomain": true,
+        "url": "https://api.meaningcloud.com/summarization-1.0",
+        "method": "POST",
+        "headers": {
+            "content-type": "application/x-www-form-urlencoded"
+        },
+        "data": {
+            "key": "d786ff4b264451fd2de354055e04f66a",
+            "txt": "",
+            "url": "https://en.wikipedia.org/wiki/Special:Random",
+            "doc": "",
+            "sentences": $("#sentences-input").val().trim(),
+        }
+    };
+    $.ajax(settings).done(function (response) {        
+        $("#text-output").html(response.summary)
+        
+        
+    });
+});
 
 $("#speechButton").on("click", function(event) {
     event.preventDefault();
