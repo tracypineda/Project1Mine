@@ -83,9 +83,17 @@
         <div class="card">
           <div class="card-body">
             <div id="text-output"><h2>Summarization appears here!</h2></div>
+            <form>
+              <button type="submit" class="btn btn-primary" id="speechButton">Speech</button>
+              <button class="btn btn-primary" id="stopButton">Stop</button>
+            </form>
           </div>
         </div>
       </div>
+    </div>
+
+    <div style="display: none">
+      <audio id="audioPlayer" src="" autoplay="autoplay"></audio>
     </div>
 
     <script src="assets/javascript/app.js" type="text/javascript"></script>
