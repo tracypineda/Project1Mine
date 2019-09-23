@@ -68,7 +68,8 @@ $("#speechButton").on("click", function(event) {
     var params = $.param({
         key: 'a64321115a4341239e25f9def1867dac',
         src: $("#text-output").text(),
-        hl: 'en-us',
+        // hl: 'en-us',
+        hl: $("#language").val(),
         r: 0, 
         c: 'mp3',
         f: '44khz_16bit_stereo',
