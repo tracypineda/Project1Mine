@@ -33,7 +33,7 @@
   <body>
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Summarize $(this)</h1>
+        <h1 class="display-4"><strong>Summarize $(this)</strong></h1>
         <p class="lead">Summarizes block text or URL inputs</p>
       </div>
     </div>
@@ -44,7 +44,7 @@
           <div class="card-body">
             <form>
               <div class="form-group">
-                <label for="textInput">Text block</label>
+                <label for="textInput">Text Block</label>
                 <textarea class="form-control" id="text-input" rows="3"
                 placeholder="Neptune is the eighth and farthest known planet from the Sun in the Solar System. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet and the densest giant planet..."
                 ></textarea>
@@ -72,6 +72,7 @@
               <button type="submit" class="btn btn-primary" id="submitButton">
                 Submit
               </button>
+              <button id="random" type="button" class="btn btn-primary">Random Wiki Article</button>
             </form>
           </div>
         </div>

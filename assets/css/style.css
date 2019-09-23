@@ -33,3 +33,11 @@ margin: auto;
     background: rgb(89, 0, 255);
 }
 
+#text-output{
+    margin-bottom: 10px;
+}
+
+#random {
+    background-color: rgb(89, 0, 255);
+}
+
