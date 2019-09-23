@@ -27,7 +27,9 @@ h2 {
 margin: auto;
 }
 
-#submitButton {
+#submitButton,
+#speechButton,
+#stopButton {
     background: rgb(89, 0, 255);
 }
 
