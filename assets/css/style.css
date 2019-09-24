@@ -41,7 +41,14 @@ margin: auto;
     background-color: rgb(89, 0, 255);
 }
 
+footer {
+    background: rgb(89, 0, 255);
+    color: white;
+}
+footer a {
+    color: white;
+}
+
 #language {
     margin-bottom: 10px;
 }
-
