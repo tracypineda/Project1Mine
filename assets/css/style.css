@@ -16,7 +16,7 @@
 }
 
 body {
-    background-image: url("assets/interlaced.png");
+    background-image: url("../interlaced.png");
 }
 
 h2 {
@@ -47,4 +47,8 @@ footer {
 }
 footer a {
     color: white;
+}
+
+#language {
+    margin-bottom: 10px;
 }
