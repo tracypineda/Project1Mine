@@ -2,6 +2,25 @@
 $("#submitButton").on("click", function(event){
 event.preventDefault();
 
+
+    if ($("#search-input").val() === ""){
+        var settings = {
+            "async": true,
+        "crossDomain": true,
+        "url": "https://api.meaningcloud.com/summarization-1.0",
+        "method": "POST",
+        "headers": {
+            "content-type": "application/x-www-form-urlencoded"
+        },
+        "data": {
+            "key": "d786ff4b264451fd2de354055e04f66a",
+            "txt": $("#text-input").val().trim(),
+            "url": $("#url-input").val().trim(),
+            "doc": "",
+            "sentences": $("#sentences-input").val().trim(),
+        }
+}
+} else {
     var settings = {
         "async": true,
 	"crossDomain": true,
@@ -13,12 +32,12 @@ event.preventDefault();
     "data": {
         "key": "d786ff4b264451fd2de354055e04f66a",
         "txt": $("#text-input").val().trim(),
-        "url": $("#url-input").val().trim(),
+        "url": "https://en.wikipedia.org/wiki/" + $("#search-input").val().trim(),
         "doc": "",
         "sentences": $("#sentences-input").val().trim(),
     }
 }
-
+}
 // var sent = $("#sentences-input").va;().trim
 // var url = $("#url-input").val().trim();
 
