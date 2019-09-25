@@ -74,14 +74,4 @@ footer a {
   }
 
 
-  @media screen and (max-width: 900px) {  
-    /* For tablets: */  
-   
-    .col-md-6 {
-        width: 100%;
-    }
-
-    body {
-        background: black;
-    }
-}  
+ 

@@ -7,6 +7,8 @@ Deployed site: https://nickcooper.github.io/projectOne/
 
 Project Description: This app is a service to summarize any text AND speak the summarized text to the user.  This goal of this project is the save time for the user.  The app offers the ability to search Wikipedia directly and get a summary of the topic,  and then with a click of a button, to hear the summarization. The user has the ability to copy and paste text into the text block field to summarize and click for speach as well.  The user can also choose a URL to paste into the URL search field and get a summarization and speach result. The app gives the user the choice of the number of sentances they would like their summarization to contain and finally there is a random Wikipedia article search button as well. 
 
+Mobile responsitivity for Android and iPhone
+
 Who is your target audience?
 People who need information fast and at their fingertips.
 What is the problem that the product will address?
@@ -27,3 +29,5 @@ Our MVP has been deployed and we have the following items for future deployment.
 1. The URL search bar can take any URL but will summarize everything on the page, including the headers and other items that aren't part of a main article.  In the future we would program this search to summarize only what the user requests or desires. 
 2. The ability to recieve multiple article summarizations.  
 3. The ablity to recieve the main image associated with the article search.  
+
+
