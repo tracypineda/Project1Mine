@@ -38,14 +38,8 @@ event.preventDefault();
     }
 }
 }
-// var sent = $("#sentences-input").va;().trim
-// var url = $("#url-input").val().trim();
 
-
-// console.log(txt)
-// console.log(url)
 $.ajax(settings).done(function (response) {
-    //console.log(response);
     $("#text-output").html(response.summary)
     
     
@@ -81,8 +75,6 @@ $("#random").on("click", function(event){
 $("#speechButton").on("click", function(event) {
     event.preventDefault();
 
-    //console.log('clicked');
-    //console.log($("#text-to-speech").val());
 
     var params = $.param({
         key: 'a64321115a4341239e25f9def1867dac',
@@ -96,7 +88,6 @@ $("#speechButton").on("click", function(event) {
     });
 
     var url = "http://api.voicerss.org/?" + params;
-    //console.log(url);
     
     $("#audioPlayer").attr("src", url);
 });
