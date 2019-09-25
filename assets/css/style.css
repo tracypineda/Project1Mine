@@ -1,10 +1,11 @@
 .card-body {
-    background: rgb(253, 249, 249)
+    background: rgb(253, 249, 249);
 }
 
 .card {
     margin-top: 20px;
     background: transparent;
+    margin-bottom: 60px;
     
 }
 
@@ -41,13 +42,6 @@ margin: auto;
     background-color: rgb(88, 8, 238);
 }
 
-footer {
-    background: rgb(119, 116, 126);
-    color: white; 
-    width: 100%;
-    padding: 20px;
-    margin-top: 50px;
-}
 footer a {
     color: white;
 }
@@ -60,3 +54,21 @@ footer a {
     text-align: center;
 }
 
+.page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  .content-wrap {
+    padding-bottom: 2.5rem; 
+  }
+  
+  footer {
+    background: rgb(119, 116, 126);
+    position: absolute;
+    bottom: 0;
+    width: 100%;   
+    padding: 20px; 
+    color: white; 
+    margin-top: 50px;
+  }
